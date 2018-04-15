@@ -1,20 +1,29 @@
 .card {
     background-color: rgb(48, 211, 135);
-    display: inline-block;
-    width: 15em;
-    height: 20em;
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+    height: 16em;
     text-align: center;
     border: 2px solid rgb(2, 134, 57);
     border-radius: 0.5rem;
     margin: 10px;
     box-shadow: 2px 2px rgba(173, 173, 173, 0.685);
-    transition : 1s;
+    transition : 0.5s;
 }
 
 .card:hover {
     transform : scale(1.05) 
 }
 .image {
-    width: 12em;
-    height:14em;
+    width: 8em;
+    height:9em;
+}
+
+h2, p{
+    margin:0;
+    padding: 0
+}
+p{
+    font-size: 0.8em;
 }

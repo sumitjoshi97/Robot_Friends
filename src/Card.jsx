@@ -1,13 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Card.css';
 
 const Card = (props) => {
+    const {id, name, email} = props;
     return (
         <div className="card">
-            <img src={`https://robohash.org/${props.id}`} alt={props.name} className="image"/>
+            <img src={`https://robohash.org/${id}`} alt={name} className="image"/>
             <div>
-                <h2>{props.name}</h2>
-                <p>{props.email}}</p>
+                <h2>{name}</h2>
+                <p>{email}</p>
             </div>
         </div>
     )
