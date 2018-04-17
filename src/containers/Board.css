@@ -7,11 +7,12 @@
     align-items: center;
     font-family: 'Gugi', cursive;
     font-weight: bold;
-    background: linear-gradient(to right, rgb(43, 121, 84), rgb(48, 100, 150))
+    background: linear-gradient(to right, rgb(16, 94, 70), rgb(30, 81, 129))
 }
 
 .Header {
     font-size: 1.5rem;
+    color: rgb(19, 28, 70);
 }
 hr {
     width: 100%;

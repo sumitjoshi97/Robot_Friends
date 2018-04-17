@@ -7,7 +7,8 @@ const Scroll = (props) => {
             overflowY: 'scroll',
             border: '1px solid black',
             height: '30em',
-            width: '80em'
+            width: '80em',
+            marginTop: '4em'
         }}>
             {props.children}
         </div>
