@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Card from './Card';
-import Searchbox from './Searchbox';
-import Scroll from './Scroll';
+import Card from '../components/Card';
+import Searchbox from '../components/Searchbox';
+import Scroll from '../components/Scroll';
 import './Board.css';
 
 class Board extends Component {
@@ -21,15 +21,19 @@ class Board extends Component {
     }
 
     render() {
-        let filteredRobots = this.state.robots.filter(robots => {
+        const {robots, searchField} = this.state;
+
+        const filteredRobots = robots.filter(robots => {
                 return robots
                     .name
                     .toLowerCase()
-                    .includes(this.state.searchField.toLowerCase())
-            })
-        let cardList = filteredRobots.map((robot) => {
+                    .includes(searchField.toLowerCase())
+        });
+
+        const cardList = filteredRobots.map((robot) => {
             return <Card key={robot.id} id={robot.id} name={robot.name} email={robot.email}/>
-        })
+        });
+
         return (
             <div className="Board">
                 <div className="Header">
@@ -38,7 +42,7 @@ class Board extends Component {
 
                 <Searchbox
                     onSearchChange={this.onSearchChange}
-                    searchValue={this.state.searchField}/>
+                    searchValue={searchField}/>
                 
                 <Scroll>
                 <div className="CardList">
@@ -46,7 +50,6 @@ class Board extends Component {
                 </div>
                 </Scroll>
             </div>
-
         )
     }
 }
