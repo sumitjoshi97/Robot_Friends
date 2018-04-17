@@ -1,0 +1,9 @@
+#SearchBox {
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    background-color: rgb(55, 153, 199);
+    color: #fff;
+    border: 1.5px solid black;  
+    border-radius: 0.2em;
+}

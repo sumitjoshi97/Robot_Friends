@@ -7,11 +7,17 @@
     align-items: center;
     font-family: 'Gugi', cursive;
     font-weight: bold;
-    background: linear-gradient(to right, rgb(94, 191, 247), rgb(61, 122, 179))
+    background: linear-gradient(to right, rgb(43, 121, 84), rgb(48, 100, 150))
 }
 
 .Header {
     font-size: 1.5rem;
+}
+hr {
+    width: 100%;
+    background-color: rgb(26, 26, 121);
+    border: 2px solid #000;
+    margin: 2em;
 }
 .CardList {
     display: flex;
