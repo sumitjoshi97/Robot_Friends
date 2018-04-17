@@ -10,6 +10,9 @@
     background: linear-gradient(to right, rgb(94, 191, 247), rgb(61, 122, 179))
 }
 
+.Header {
+    font-size: 1.5rem;
+}
 .CardList {
     display: flex;
     flex-flow: row wrap;
